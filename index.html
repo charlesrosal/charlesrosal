@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>CITE Student Registration</h2>
+      <form id="registerForm" action="registered.php" method="POST" target="_blank">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+        <label for="middle-name">Middle Name</label>
+        <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="suffix">Suffix</label>
+        <input type="text" id="suffix" name="suffix" placeholder="Suffix">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+        <label for="idnumber">ID Number</label>
+        <input type="text" id="idnumber" name="idnumber" placeholder="ID Number" required>
+
+        <label for="batch">Batch</label>
+        <select id="batch" name="batch">
+          <option value="">Select Batch</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+        </select>
+
+        <label for="technologies">Technology</label>
+        <select id="technologies" name="technologies" required>
+          <option value="Computer Engineering Technology">Computer Engineering Technology</option>
+          <option value="Information Technology">Electrical Engineering Technology</option>
+          <option value="Electronics Engineering">Electronics Engineering</option>
+          <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label class="checkbox">
+          <input type="checkbox" name="terms" required />
+          I agree to Terms of Service & Privacy Policy
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
